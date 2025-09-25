@@ -22,22 +22,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { NavLink, useLocation } from "react-router-dom"
-import { LayoutDashboard } from "lucide-react"
-function DashboardMenuItem() {
-  const location = useLocation()
-  const isActive = location.pathname === "/dashboard"
-  return (
-    <SidebarMenuItem>
-      <SidebarMenuButton asChild isActive={isActive}>
-        <NavLink to="/dashboard" className="flex items-center gap-2">
-          <LayoutDashboard />
-          <span>Dashboard</span>
-        </NavLink>
-      </SidebarMenuButton>
-    </SidebarMenuItem>
-  )
-}
+
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7

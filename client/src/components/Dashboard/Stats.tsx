@@ -3,7 +3,7 @@ import { SystemAdmin } from "@/services";
 import { useQuery } from "@tanstack/react-query";
 import { Skeleton } from "../ui/skeleton";
 import ErrorDisplay from "../Generics/ErrorDisplay";
-import StatCard from "../Generics/StatCard";
+
 import StatCard2 from "../Generics/StatCard2";
 import type { Stat } from "@/types";
 
