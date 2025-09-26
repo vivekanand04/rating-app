@@ -19,9 +19,17 @@ export const DashBoardPageWrapper: React.FC<DashBoardPageWrapperProps> = ({
         </div>
       )}
 
-      <div
+      {/* <div
         className={cn(
           "flex-1 min-h-0 rounded-lg border border-dashed shadow-sm",
+          className
+        )}
+      >
+        {children}
+      </div> */}
+         <div
+        className={cn(
+          "flex-1 rounded-lg border border-dashed shadow-sm",
           className
         )}
       >

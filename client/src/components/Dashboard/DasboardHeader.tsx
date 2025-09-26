@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "../ui/sidebar";
-import { useLocation, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 import { LogOut } from "lucide-react";
 import { useState } from "react";
@@ -9,7 +9,7 @@ import { useAuth } from "@/hooks/use-auth";
 import { toast } from "sonner";
 
 export const DasboardHeader = () => {
-  const currentPage = useLocation();
+  // const currentPage = useLocation();
 
   const [isLoading, setLoading] = useState<boolean>(false);
 
@@ -44,11 +44,17 @@ export const DasboardHeader = () => {
           orientation="vertical"
           className="mr-2 data-[orientation=vertical]:h-4"
         />
-        <p className="capitalize">
+        {/* <p className="capitalize">
           {currentPage.pathname === "/dashboard"
             ? "Home"
             : currentPage.pathname.replace("/dashboard/", "")}
-        </p>
+        </p> */}
+        <span className="block text-lg  md:text-xl lg:text-2xl">
+         <strong> Store Rating Platform</strong>
+        </span>
+        
+
+       
       </div>
       <Button
         className="flex items-center justify-center h-10 w-10 rounded-full"

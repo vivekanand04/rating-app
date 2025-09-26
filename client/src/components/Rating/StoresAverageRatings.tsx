@@ -39,7 +39,7 @@ export const StoresAverageRatings = () => {
   }
 
   return (
-    <div className="grid w-full mx-4 grid-cols-1 md:grid-cols-3 p-4">
+    <div className="grid w-full mx-auto grid-cols-1 gap-2 md:grid-cols-3 p-4">
       {ratings?.map((rating: RatingType, i: number) => (
         <StatCard
           key={i}

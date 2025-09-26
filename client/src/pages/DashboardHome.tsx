@@ -12,12 +12,12 @@ export const DashboardHome = () => {
       ) : authUser?.role === "STORE_OWNER" ? (
         <StoresAverageRatings />
       ) : (
-        <div className="flex justify-center items-center w-full h-full">
-          <p className="font-medium text-2xl">
-            Welocome to store rating platform
+        <div className="flex justify-center items-center w-full h-full  ">
+          <p className="font-medium  sm:text-2xl pl-6 ">
+           Welcome! Track and Rate Stores Seamlessly
           </p>
         </div>
       )}
     </DashBoardPageWrapper>
   );
-};
+};  

@@ -1,3 +1,3 @@
   export const APP_DETAILS = {
-  appName: "Store Rating Platform",
+  appName: "Explore Stores",
 };
